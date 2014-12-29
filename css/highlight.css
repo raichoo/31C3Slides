@@ -1,0 +1,46 @@
+div.highlight {
+  background: #1B1E1D;
+  color: #F8F8F2;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: monospace;
+}
+
+.highlight .kr {
+  color: #66D9EF;
+}
+
+.highlight .nn {
+  color: #A6E22E;
+}
+
+.highlight .nf {
+  color: #FD971F;
+}
+
+.highlight .kt,
+.highlight .kd,
+.highlight .o,
+.highlight .p {
+  color: #A6E22E;
+}
+
+.highlight .ow,
+.highlight .k
+{
+  color: #F92672;
+}
+
+.highlight .mi {
+  color: #AE81FF;
+}
+
+.highlight .s {
+  color: #E6DB74;
+}
+
+.highlight .err {
+  color: #8F8F8F;
+}

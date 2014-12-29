@@ -1,0 +1,12 @@
+h1#title {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+span.idris {
+  font-style: italic;
+}

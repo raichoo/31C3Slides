@@ -1,0 +1,150 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  text-align: left;
+  vertical-align: baseline;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #1F1F1F;
+  background-color: #F8F8F8;
+  font: normal normal normal 1em/1.4 Segoe, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.64);
+}
+h1 {
+  color: #456D89;
+  font-size: 2.75em;
+  font-weight: 300;
+  line-height: 1.0;
+}
+h2,
+h4 {
+  color: #585655;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 26px;
+}
+h2 {
+  margin-bottom: 2em;
+}
+h3,
+h5 {
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: none;
+  color: #456D89;
+}
+h5 {
+  margin-bottom: 0;
+  text-transform: none;
+  font-size: 1em;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1em;
+}
+
+a {
+  color: #456D89;
+  text-decoration: none;
+}
+a:hover {
+  color: #373737;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-left: 1.75em;
+}
+
+ul > ul,
+ol > ol {
+  margin-left: 0.8em;
+}
+ul {
+  list-style: square;
+}
+ol {
+  list-style: decimal;
+}
+
+p,
+ul,
+ol,
+table,
+fieldset {
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none !important;
+}
+
+#main {
+  height: 100%;
+}
+
+.slideWrap {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.slide {
+  width: 100%;
+  min-height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.slideCenter {
+  width: 100%;
+  height: 100%;
+}
+.slideCenter:before {
+  height: 100%;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+.slideCenter > .slideInnerWrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+.slideTitle {
+  margin-bottom: 1em;
+}
+.slideCount {
+  opacity: 0.64;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
