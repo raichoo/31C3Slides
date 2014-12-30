@@ -22,13 +22,13 @@ appendTo elm to =
   mkForeign (FFun "%0.append(%1)" [FPtr, FPtr] FUnit) to elm
 
 private
-unbindKeypress : IO Ptr
-unbindKeypress =
-  mkForeign (FFun "$(document).unbind('keypress')" [] FPtr)
+unbindKeydown : IO Ptr
+unbindKeydown =
+  mkForeign (FFun "$(document).unbind('keydown')" [] FPtr)
 
-onKeypress : (Ptr -> IO ()) -> IO ()
-onKeypress f = do
-  unbindKeypress
-  mkForeign (FFun "$(document).keypress(%0)" [
+onKeydown : (Ptr -> IO ()) -> IO ()
+onKeydown f = do
+  unbindKeydown
+  mkForeign (FFun "$(document).keydown(%0)" [
       FFunction FPtr (FAny (IO ()))
     ] FUnit) f

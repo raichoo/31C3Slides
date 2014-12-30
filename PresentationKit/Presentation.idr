@@ -26,16 +26,16 @@ previousSlide {n} {m} (MkPresentation (slide :: prev) next) =
   rewrite plusSuccRightSucc n m in
           MkPresentation prev (slide :: next)
 
-getKey : Ptr -> IO String
+getKey : Ptr -> IO Int
 getKey p =
-  mkForeign (FFun "%0.key" [FPtr] FString) p
+  mkForeign (FFun "%0.which" [FPtr] FInt) p
 
 bindKeys : IO () -> IO () -> IO ()
 bindKeys left right = do
-  onKeypress (\event => do case !(getKey event) of
-                                "Left"  => left
-                                "Right" => right
-                                _       => return ())
+  onKeydown (\event => do case !(getKey event) of
+                                37 => left
+                                39 => right
+                                _  => return ())
 
 slideWrapper : String -> List HTML -> HTML
 slideWrapper id nodes =
